@@ -1,0 +1,33 @@
+{
+  "identificacion": {
+    "numero_factura": "F-2025-0001",
+    "fecha_emision": "2025-01-15"
+  },
+  "conceptos": [
+    {
+      "descripcion": "Servicios de consultoría",
+      "importe": 1000.0,
+      "tipo_iva": 21
+    }
+  ],
+  "receptor": {
+    "nombre": "Cliente Ejemplo S.L.",
+    "nif": "B12345678",
+    "actividad_cnae": "6201"
+  },
+  "emisor": {
+    "nombre": "Proveedor Ejemplo S.L.",
+    "nif": "B87654321",
+    "actividad_cnae": "7022"
+  },
+  "fiscal": {
+    "regimen_iva": "general",
+    "retencion_aplicada": false,
+    "tipo_retencion": 0
+  },
+  "importes": {
+    "base_imponible": 1000.0,
+    "iva": 210.0,
+    "total": 1210.0
+  }
+}
