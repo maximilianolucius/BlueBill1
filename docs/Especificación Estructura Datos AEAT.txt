@@ -1,0 +1,57 @@
+{
+  "identificacion": {
+    "id_interno": "...",
+    "numero_factura": "...",
+    "serie": "..."
+  },
+  "fechas": {
+    "emision": "...",
+    "prestacion_servicio": "...", // NUEVO
+    "vencimiento": "...", // NUEVO
+    "pago_efectivo": "..." // NUEVO
+  },
+  "emisor": {
+    "nombre": "...",
+    "cif": "...",
+    "direccion": "...",
+    "email": "...",
+    "actividad_cnae": "...", // NUEVO
+    "pais_residencia": "..." // NUEVO
+  },
+  "receptor": { // NUEVO COMPLETO
+    "nombre": "...",
+    "cif": "...",
+    "actividad_cnae": "...",
+    "sector": "...",
+    "tipo_empresa": "..."
+  },
+  "conceptos": [ // NUEVO CRÍTICO
+    {
+      "descripcion": "...",
+      "cantidad": "...",
+      "precio_unitario": "...",
+      "importe_linea": "...",
+      "tipo_iva": "...",
+      "codigo_producto": "..."
+    }
+  ],
+  "importes": {
+    "base_imponible": "...",
+    "iva_21": "...", // DESGLOSADO
+    "iva_10": "...",
+    "iva_4": "...",
+    "irpf": "...",
+    "total": "..."
+  },
+  "contexto_empresarial": { // NUEVO
+    "departamento": "...",
+    "proyecto": "...",
+    "centro_coste": "...",
+    "porcentaje_afectacion": "..."
+  },
+  "pago": { // NUEVO
+    "forma_pago": "...",
+    "cuenta_bancaria": "...",
+    "fecha_pago": "..."
+  }
+}

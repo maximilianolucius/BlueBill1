@@ -1,0 +1,24 @@
+Cada número corresponde a un formulario específico:
+
+036/037: Declaración censal de alta, modificación y baja
+100: Declaración anual del IRPF
+111: Retenciones e ingresos a cuenta del IRPF (trimestral)
+115: Retenciones e ingresos a cuenta sobre rentas del capital (trimestral)
+130: Pago fraccionado del IRPF (trimestral)
+131: Pago fraccionado del IRPF para determinas actividades (trimestral)
+303: IVA (trimestral)
+347: Declaración anual de operaciones con terceros
+349: Declaración recapitulativa de operaciones intracomunitarias
+390: IVA (anual)
+
+
+036/037: Census declaration for registration, modification and deregistration
+100: Annual personal income tax return
+111: Personal income tax withholdings and advance payments (quarterly)
+115: Withholdings and advance payments on capital income (quarterly)
+130: Personal income tax installment payment (quarterly)
+131: Personal income tax installment payment for certain activities (quarterly)
+303: VAT (quarterly)
+347: Annual declaration of operations with third parties
+349: Recapitulative declaration of intra-community operations
+390: VAT (annual)

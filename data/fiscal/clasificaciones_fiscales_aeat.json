@@ -1,0 +1,1583 @@
+{
+  "G01": {
+    "descripcion": "Compra de existencias",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "IRPF"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "trimestral"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "específico REDEME"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si compras >3.005,06€ anuales al mismo proveedor"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si compras intracomunitarias"
+          }
+        }
+      }
+    }
+  },
+  "G02": {
+    "descripcion": "Variación de existencias (disminución)",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "afecta al cálculo de beneficios"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "reduce la base imponible"
+          }
+        },
+        "nota": "NO genera IVA - Sin modelo 303"
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "afecta al resultado contable"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "reduce la base imponible"
+          }
+        },
+        "nota": "NO genera IVA - Sin modelo 303"
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {},
+        "nota": "NO aplica - La variación de existencias no genera IVA"
+      },
+      "complementarios": {
+        "descripcion": "Complementarios",
+        "modelos": {},
+        "nota": "Ninguno - No hay operaciones con terceros ni IVA"
+      }
+    }
+  },
+  "G03": {
+    "descripcion": "Otros consumos de explotación",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "IRPF"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "trimestral"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "específico REDEME"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si gastos >3.005,06€ anuales al mismo proveedor"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si gastos intracomunitarios"
+          }
+        }
+      }
+    }
+  },
+  "G05": {
+    "descripcion": "Seguridad Social a cargo de la empresa",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "deduce cotizaciones como gasto"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF empleados",
+            "detalle": "si tiene trabajadores"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "deduce cotizaciones como gasto"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF empleados",
+            "detalle": "obligatorio si tiene empleados"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "130_131_o_202": {
+            "descripcion": "Según sea autónomo o sociedad",
+            "detalle": "variable según régimen base"
+          },
+          "111": {
+            "descripcion": "Retenciones empleados",
+            "detalle": "si tiene trabajadores"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios",
+        "modelos": {
+          "190": {
+            "descripcion": "Resumen anual retenciones IRPF",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si cotizaciones >3.005,06€ anuales (raro, pero posible)"
+          }
+        }
+      }
+    }
+  },
+  "G06": {
+    "descripcion": "Seguridad Social y Aportaciones a mutualidades alternativas del titular",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "deducible en actividades económicas"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "deducible si administrador-autónomo"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "deducible si administrador-autónomo"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "Sin IVA",
+            "detalle": "no soporta IVA"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "resto igual que autónomo"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "resto igual que autónomo"
+          }
+        }
+      }
+    }
+  },
+  "G45": {
+    "descripcion": "Seguridad Social del titular",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "igual que autónomo"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "igual que autónomo"
+          }
+        },
+        "nota": "Solo modelos IRPF (130/131 y 100)"
+      }
+    }
+  },
+  "G46": {
+    "descripcion": "Aportaciones a mutualidades alternativas del titular",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "130": {
+            "descripcion": "Pago fraccionado trimestral",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible hasta límites legales"
+          }
+        },
+        "nota": "NO aplica IVA (no es operación sujeta). Límite deducción: Hasta 5.200€/año (2024)"
+      },
+      "autonomo_modulos": {
+        "descripcion": "Autónomo en Módulos",
+        "modelos": {
+          "131": {
+            "descripcion": "Pago fraccionado trimestral",
+            "detalle": "régimen de módulos"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        },
+        "nota": "NO aplica IVA"
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "202": {
+            "descripcion": "Pagos fraccionados",
+            "detalle": "si es aportación del administrador"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        },
+        "nota": "NO aplica IVA"
+      },
+      "complementarios": {
+        "descripcion": "Complementarios",
+        "modelos": {
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "solo si supera 3.005,06€ anuales"
+          }
+        },
+        "nota": "NO aplica modelos 303, 390, 349 (no hay IVA). G06 → G46: Cambio clasificación desde 2T 2024"
+      }
+    }
+  },
+  "G07": {
+    "descripcion": "Indemnizaciones",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "si son indemnizaciones gravadas"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "pueden estar exentas según tipo"
+          }
+        },
+        "nota": "NO Modelo 303 - Las indemnizaciones no están sujetas a IVA"
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "si son gastos deducibles"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        },
+        "nota": "NO Modelo 303 - No sujetas a IVA"
+      },
+      "empleado_cuenta_ajena": {
+        "descripcion": "Empleado por cuenta ajena",
+        "modelos": {
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "exentas hasta límites legales por despido"
+          },
+          "retencion_automatica": {
+            "descripcion": "Retención automática",
+            "detalle": "si las paga la empresa"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (según caso)",
+        "modelos": {
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si >3.005,06€ anuales del mismo pagador"
+          },
+          "190": {
+            "descripcion": "Resumen anual de retenciones",
+            "detalle": "si las hubo"
+          }
+        },
+        "nota": "Indemnizaciones por despido exentas hasta límite legal (mín. entre indemnización legal y 180.000€)"
+      }
+    }
+  },
+  "G08": {
+    "descripcion": "Dietas y asignaciones de viajes del personal empleado",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "si documenta gastos con factura"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA de gastos documentados"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF",
+            "detalle": "si excede límites exentos"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "trimestral"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "específico REDEME"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF",
+            "detalle": "si procede"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "190": {
+            "descripcion": "Resumen anual retenciones IRPF",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si gastos >3.005,06€ anuales al mismo proveedor"
+          }
+        }
+      }
+    }
+  },
+  "G09": {
+    "descripcion": "Aportaciones a sistemas de previsión social imputadas al personal empleado",
+    "regimenes": {
+      "autonomo_con_empleados": {
+        "descripcion": "Autónomo (IRPF) con empleados",
+        "modelos": {
+          "111": {
+            "descripcion": "Retenciones IRPF empleados",
+            "detalle": "trimestral"
+          },
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "si procede"
+          },
+          "130": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "IRPF"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "sociedad_con_empleados": {
+        "descripcion": "Sociedad con empleados",
+        "modelos": {
+          "111": {
+            "descripcion": "Retenciones IRPF empleados",
+            "detalle": "trimestral"
+          },
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "si procede"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "trimestral"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "redeme_con_empleados": {
+        "descripcion": "Régimen REDEME con empleados",
+        "modelos": {
+          "111": {
+            "descripcion": "Retenciones IRPF empleados",
+            "detalle": "obligatorio"
+          },
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "si procede"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios",
+        "modelos": {
+          "190": {
+            "descripcion": "Resumen anual retenciones IRPF",
+            "detalle": "enero"
+          },
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "enero"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si >3.005,06€ anuales por proveedor"
+          }
+        },
+        "nota": "Aportaciones a previsión social del personal se declaran principalmente en Modelo 111"
+      }
+    }
+  },
+  "G10": {
+    "descripcion": "Otros gastos de personal",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "111": {
+            "descripcion": "Retenciones IRPF trimestral",
+            "detalle": "si hay empleados"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "deduce gastos"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "111": {
+            "descripcion": "Retenciones IRPF trimestral",
+            "detalle": "empleados"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "trimestral"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "regimen_modulos": {
+        "descripcion": "Régimen de Módulos",
+        "modelos": {
+          "111": {
+            "descripcion": "Retenciones IRPF trimestral",
+            "detalle": "si hay empleados"
+          },
+          "131": {
+            "descripcion": "Pagos fraccionados módulos",
+            "detalle": "específico módulos"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "190": {
+            "descripcion": "Resumen anual retenciones IRPF",
+            "detalle": "enero"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si pagos >3.005,06€ anuales al mismo trabajador/colaborador"
+          }
+        },
+        "nota": "Sin IVA - Los gastos de personal no llevan IVA (no aplican modelos 303/390). Cotizaciones sociales se gestionan fuera de estos modelos"
+      }
+    }
+  },
+  "G11": {
+    "descripcion": "Gastos de manutención del contribuyente",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "NO deduce IVA (consumo final)"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "NO reduce base imponible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "NO deducible en IRPF"
+          }
+        },
+        "nota": "NO deducible fiscalmente - Gasto personal"
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "NO deduce IVA"
+          },
+          "202_200": {
+            "descripcion": "Pagos fraccionados/anual",
+            "detalle": "NO reduce base imponible"
+          }
+        },
+        "nota": "NO deducible fiscalmente - Gasto del socio/administrador. Excepción: Si es gasto de representación con límites (0.5% cifra negocios)"
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "NO deduce IVA"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios",
+        "modelos": {
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "solo si >3.005,06€ anuales (informativo)"
+          },
+          "390_349": {
+            "descripcion": "Resúmenes anuales",
+            "detalle": "si aplicable (informativo)"
+          }
+        },
+        "nota": "⚠️ IMPORTANTE: Gastos personales NO deducibles según artículo 30.2.5ª.c LIRPF. Solo efectos informativos"
+      }
+    }
+  },
+  "G12": {
+    "descripcion": "Arrendamientos y cánones",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "115": {
+            "descripcion": "Retenciones por alquiler de locales",
+            "detalle": "si aplica"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "115": {
+            "descripcion": "Retenciones por alquiler de locales",
+            "detalle": "si aplica"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "trimestral"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "específico REDEME"
+          },
+          "115": {
+            "descripcion": "Retenciones por alquiler de locales",
+            "detalle": "si aplica"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "180": {
+            "descripcion": "Resumen anual retenciones alquileres",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si arrendamientos >3.005,06€ anuales al mismo arrendador"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si arrendamientos intracomunitarios"
+          }
+        },
+        "nota": "Modelo 115 solo aplica para alquileres de locales de negocio, no para bienes muebles o cánones"
+      }
+    }
+  },
+  "G13": {
+    "descripcion": "Reparaciones y conservación",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "trimestral"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "específico REDEME"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si gastos >3.005,06€ anuales al mismo proveedor"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si servicios intracomunitarios"
+          }
+        },
+        "nota": "Gastos de reparaciones y conservación son deducibles como gasto del ejercicio (no se activan en balance)"
+      }
+    }
+  },
+  "GY4": {
+    "descripcion": "Suministros (electricidad, agua, gas, telefonía e internet)",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "deduce IVA soportado"
+          }
+        }
+      },
+      "regimen_modulos": {
+        "descripcion": "Régimen de Módulos",
+        "modelos": {
+          "131": {
+            "descripcion": "Pagos fraccionados",
+            "detalle": "sin deducción específica, tributación por módulos"
+          },
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "solo si está en régimen general de IVA"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si facturas >3.005,06€ anuales de mismo proveedor (poco común en suministros)"
+          }
+        }
+      }
+    }
+  },
+  "G14": {
+    "descripcion": "Gastos por suministro eléctrico",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "deduce IVA soportado"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si gastos >3.005,06€ anuales a la misma compañía eléctrica"
+          }
+        },
+        "nota": "A diferencia de G01 (existencias), G14 es gasto directo deducible del ejercicio, no activo que se amortiza"
+      }
+    }
+  },
+  "G15": {
+    "descripcion": "Gastos por suministro de agua",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado al 10%"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado al 10%"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "deduce IVA soportado al 10%"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si pagos >3.005,06€ anuales a la misma compañía de aguas"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "no aplica (suministros locales)"
+          }
+        },
+        "nota": "El agua tiene IVA reducido (10%) y es gasto totalmente deducible en actividades empresariales/profesionales"
+      }
+    }
+  },
+  "G16": {
+    "descripcion": "Gastos por suministro de gas",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "deduce IVA soportado"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si gastos >3.005,06€ anuales a la misma compañía gasística"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si proveedor de gas intracomunitario"
+          }
+        },
+        "nota": "El gas es un gasto deducible y genera IVA soportado deducible. Mismo tratamiento tributario que otros suministros"
+      }
+    }
+  },
+  "G17": {
+    "descripcion": "Gastos por suministro de telefonía e internet",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "deduce IVA soportado"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si gastos >3.005,06€ anuales con mismo proveedor (poco común en telefonía)"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "no aplica (servicios nacionales)"
+          }
+        },
+        "nota": "Gasto 100% deducible si uso exclusivo empresarial. Prorrateo necesario si uso mixto. En módulos, puede estar incluido en el módulo"
+      }
+    }
+  },
+  "G18": {
+    "descripcion": "Otros suministros",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "deduce IVA soportado"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si compras >3.005,06€ anuales al mismo proveedor"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si compras intracomunitarias"
+          }
+        },
+        "nota": "Tratamiento idéntico a G01: se tratan igual que las compras de existencias en términos de IVA soportado deducible y gastos deducibles"
+      }
+    }
+  },
+  "G19": {
+    "descripcion": "Servicios de profesionales independientes",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "repercute IVA"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF trimestral",
+            "detalle": "si le aplican retención"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "ingresos declarables"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "repercute IVA"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF trimestral",
+            "detalle": "si le aplican retención"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "ingresos declarables"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "declaración anual"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "repercute IVA"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF trimestral",
+            "detalle": "si le aplican retención"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "190": {
+            "descripcion": "Resumen anual retenciones IRPF",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si facturas >3.005,06€ anuales al mismo cliente"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si servicios intracomunitarios"
+          }
+        },
+        "nota": "Como receptor del servicio, también declaras en Modelo 347 si pagas >3.005,06€ anuales al mismo profesional"
+      }
+    }
+  },
+  "G40": {
+    "descripcion": "Gastos de Formalización de Contratos",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado si lo tiene"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado si lo tiene"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "si tiene IVA"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "si tiene IVA"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si gastos >3.005,06€ anuales al mismo proveedor"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si son servicios intracomunitarios"
+          }
+        },
+        "nota": "Muchos gastos de formalización (notarías, registros) están exentos de IVA, por lo que solo afectarían a los modelos de beneficios"
+      }
+    }
+  },
+  "G41": {
+    "descripcion": "Gastos de Defensa Jurídica",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado si lo hay"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF",
+            "detalle": "si el abogado aplica retención"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF",
+            "detalle": "si hay retención"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "deduce IVA soportado"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF",
+            "detalle": "si aplican"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "190": {
+            "descripcion": "Resumen anual retenciones IRPF",
+            "detalle": "obligatorio anual"
+          },
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si honorarios >3.005,06€ anuales al mismo profesional"
+          }
+        },
+        "nota": "Los gastos jurídicos suelen llevar retención IRPF del 15% (modelo 111), además del IVA del 21%"
+      }
+    }
+  },
+  "G42": {
+    "descripcion": "Otras cantidades devengadas por terceros por servicios personales",
+    "regimenes": {
+      "autonomo": {
+        "descripcion": "Autónomo (IRPF)",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado si lo hay"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF",
+            "detalle": "si el prestador las aplica"
+          },
+          "130_131": {
+            "descripcion": "Pagos fraccionados trimestrales",
+            "detalle": "gasto deducible"
+          },
+          "100": {
+            "descripcion": "IRPF anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "sociedad": {
+        "descripcion": "Sociedad",
+        "modelos": {
+          "303": {
+            "descripcion": "IVA trimestral",
+            "detalle": "deduce IVA soportado"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF",
+            "detalle": "practicadas"
+          },
+          "202": {
+            "descripcion": "Pagos fraccionados sociedades",
+            "detalle": "gasto deducible"
+          },
+          "200": {
+            "descripcion": "Impuesto Sociedades anual",
+            "detalle": "gasto deducible"
+          }
+        }
+      },
+      "redeme": {
+        "descripcion": "Régimen REDEME",
+        "modelos": {
+          "303_redeme": {
+            "descripcion": "IVA mensual",
+            "detalle": "deduce IVA soportado"
+          },
+          "111": {
+            "descripcion": "Retenciones IRPF",
+            "detalle": "si aplican"
+          }
+        }
+      },
+      "complementarios": {
+        "descripcion": "Complementarios (todos los regímenes)",
+        "modelos": {
+          "390": {
+            "descripcion": "Resumen anual IVA",
+            "detalle": "obligatorio anual"
+          },
+          "190": {
+            "descripcion": "Resumen anual retenciones IRPF",
+            "detalle": "obligatorio anual"
+          },
+          "347": {
+            "descripcion": "Operaciones con terceros",
+            "detalle": "si pagos >3.005,06€ anuales al mismo prestador"
+          },
+          "349": {
+            "descripcion": "Operaciones intracomunitarias",
+            "detalle": "si servicios intracomunitarios"
+          }
+        },
+        "nota": "Los servicios personales suelen llevar retención IRPF (Modelo 111), diferenciándolos de las compras de existencias"
+      }
+    }
+  }
+}
